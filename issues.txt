@@ -1,0 +1,19 @@
+kdevtmpfsi
+
+The solution mentioned here worked for us. You basically create the files the miner uses, without any rights, so the miner cannot create and use them. https://github.com/docker-library/redis/issues/217
+
+touch /tmp/kdevtmpfsi && touch /var/tmp/kinsing
+
+echo "everything is good here" > /tmp/kdevtmpfsi
+
+echo "everything is good here" > /var/tmp/kinsing
+
+touch /tmp/zzz
+
+echo "everything is good here" > /tmp/zzz
+
+chmod go-rwx /var/tmp
+
+chmod 1777 /tmp
+
+-------------
