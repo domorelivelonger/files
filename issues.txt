@@ -1,4 +1,6 @@
-kdevtmpfsi
+kdevtmpfsi 100% cpu 
+
+
 
 The solution mentioned here worked for us. You basically create the files the miner uses, without any rights, so the miner cannot create and use them. https://github.com/docker-library/redis/issues/217
 
